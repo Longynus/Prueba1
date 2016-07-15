@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="happyapps.pensumprueba1.MainActivity">
+
+    <ImageButton
+        android:layout_width="1100px"
+        android:layout_height="500px"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ff0000"
+        android:src="@mipmap/p1"
+        android:onClick="Maps" />
+
+    <ImageButton
+        android:layout_width="1100px"
+        android:layout_height="500px"
+        android:id="@+id/imageButton2"
+        android:background="#3243fb"
+        android:src="@mipmap/p2"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
+
+    <ImageButton
+        android:layout_width="550px"
+        android:layout_height="500px"
+        android:id="@+id/imageButton3"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_below="@+id/imageButton2"
+        android:src="@mipmap/p4" />
+
+    <ImageButton
+        android:layout_width="550px"
+        android:layout_height="500px"
+        android:id="@+id/imageButton4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3"
+        android:src="@mipmap/p3"
+        android:layout_below="@+id/imageButton2" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_portada">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
